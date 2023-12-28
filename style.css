@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Estilo Geral */
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +19,22 @@ body {
 
 }
 
-/* Estilo do Cabeçalho */
+.flex {
+    display: flex;
+    align-items: center;
+}
 
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FF914D;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do Cabeçalho */
 header {
     padding: 40px 4%;
 }
@@ -48,21 +62,37 @@ header nav li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #FF914D;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
 header a:hover{
     color: white;
     transform: scale(1.05);
 }
 
-header .btn-contato button {
+header .btn-contato button:hover {
     box-shadow: 0px 0px 12px #eb6c1d;
+}
+
+/* Estilo do Topo do Site */
+section .topo-do-site {
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site  h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #eb6c1d;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0; 
 }
