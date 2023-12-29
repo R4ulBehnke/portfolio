@@ -189,7 +189,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -294,4 +294,32 @@ form .btn-salvar input {
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+}
+
+/* Estilização do Footer */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff2a;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 15px 0;
+}
+
+.borda{
+    border-top: 2px solid #eb6c1d;
+}
+
+footer .line-footer p i{
+    color: #FF914D;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
 }
