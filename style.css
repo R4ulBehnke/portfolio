@@ -45,7 +45,7 @@ h2.titulo span {
     color: #FF914D;
 }
 
-button:hover {
+button:hover, form .btn-salvar input:hover {
     box-shadow: 0px 0px 12px #eb6c1d;
     transform: scale(1.05);
 }
@@ -210,6 +210,7 @@ section.portfolio{
 
 section.portfolio .flex{
     justify-content: space-around;
+    margin-top: 60px;
 }
 
 .img-port{
@@ -247,4 +248,50 @@ section.portfolio .flex{
 
 .overlay:hover{
     opacity: 1;
+}
+
+/* Estilo do Formulário de Contato */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #333333;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-salvar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-salvar input {
+    width: 120px;
+    background-color: #FF914D;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
 }
